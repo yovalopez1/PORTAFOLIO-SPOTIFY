@@ -3,13 +3,13 @@ import {consumirAPI} from "./servicios.js"
 import { pintarCanciones } from "./pintar.js"
 let fila = document.getElementById("base")
 let artistas = [
-    {URI : 'https://api.spotify.com/v1/artists/3IEvQoAohcGX7CdrbtIle7/top-tracks?market=US', IMG : 'img/img_Baby-rasta&Gringo.jpg', nombre: "wisin y yandel"},
-    {URI : 'https://api.spotify.com/v1/artists/4SsVbpTthjScTS7U2hmr1X/top-tracks?market=US', IMG : 'img/IMG_Arcangel.jpg', nombre: "arcangel"},
+    {URI : 'https://api.spotify.com/v1/artists/4SsVbpTthjScTS7U2hmr1X/top-tracks?market=US', IMG : 'img/Img_Arcangel-La-Maravilla.png', nombre: "arcangel"},
+    {URI : 'https://api.spotify.com/v1/artists/3IEvQoAohcGX7CdrbtIle7/top-tracks?market=US', IMG : 'img/img_Baby-rasta&Gringo1.png', nombre: "wisin y yandel"},
     {URI : 'https://api.spotify.com/v1/artists/4152ZUds7gXsqYQexUonDP/top-tracks?market=US', IMG : 'img/IMG_Grupo-Gale.jpg', nombre: "Grupo Gale"},
     {URI : 'https://api.spotify.com/v1/artists/2EIZodXJHserIu4pGNfD3Z/top-tracks?market=US', IMG : 'img/IMG_Willie-Gonzalez.jpg', nombre: "Willie Gonzalez"},
     {URI : 'https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB/top-tracks?market=US', IMG : 'img/Img_Metalleca.png', nombre: "Evanesence"}
 ]
-//4IMAo2UQchVFyPH24PAjUs  21451j1KhjAiaYKflxBjr1  *2ziB7fzrXBoh1HUPS6sVFn
+//4IMAo2UQchVFyPH24PAjUs  21451j1KhjAiaYKflxBjr1  *2ziB7fzrXBoh1HUPS6sVFn Img_Arcangel(Austin)_La-Maravilla.jpg
 let TOKEN = await generarTOKEN()
 let resultado = await consumirAPI(artistas[0].URI, TOKEN)
 pintarCanciones(resultado)
